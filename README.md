@@ -21,8 +21,6 @@ The virgool.io website's, API documentions that created with other developers, o
 - params: [پارامتر1,پارامتر2,پارامتر3,...]
   
 ```آدرس```
-
-Response :
   
 ```
 {
@@ -39,11 +37,13 @@ Response :
   
 Note : اختیاری، نکات احتمالی مورد نظر
 
-##Response :
+Response :
 
+```
 {
   پارامتر1:...
   پارامتر2:...
   ...
 }
+```
 </div>  
