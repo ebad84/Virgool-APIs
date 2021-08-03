@@ -103,7 +103,7 @@ user:
   
 ```
 {
-  "username":"ebad84.025@gmail.com",
+  "username":"",
   "type":"login",
   "method":"email"
 }
