@@ -91,3 +91,51 @@ user:
   blocked	[true-false]
 }
 ```
+
+
+# User Existence
+
+- method: POST
+  
+- params: [method,type,username]
+  
+```https://virgool.io/api/v1.4/auth/user-existence```
+  
+```
+{
+  "username":"ebad84.025@gmail.com",
+  "type":"login",
+  "method":"email"
+}
+```
+  
+  
+**LOGIN :** *_False[❌] _*
+  
+**_Desc：برسی موجود بودن یک یوزر، و ادامه فرایند لاگین _**
+  
+Note : در ارسال ریکوئست، type یکی از موارد این لیست میباشد [username,email,phone] که بنا بر ورودی باید مشخص گردد.
+
+Response :
+
+IF TRUE:
+```
+{
+success	true
+user_exist	true
+activated	true
+recaptcha	false
+verify_options	
+phone	"09*******00"
+email	"..."
+password	true
+}
+```
+IF FALSE:
+```
+{
+success	true
+msg	"کاربری با این مشخصات یافت نشد."
+recaptcha	false
+}
+```
