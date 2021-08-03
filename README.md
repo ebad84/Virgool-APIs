@@ -49,3 +49,45 @@ Response :
 }
 ```
 </div>  
+
+
+# API-Version : 1.4
+
+# ME
+
+- method: GET
+  
+- params: []
+  
+```https://virgool.io/api/v1.4/user/info```
+  
+```
+{
+}
+```
+  
+  
+**LOGIN :** *_TRUE[✔] _*
+  
+**_Desc：بعد از لاگین کردن، میتوان با ارسال ریکوئست به این آدرس اطلاعات کمی درمورد حساب کاربری خود بدست آورید_**
+  
+Note : تنها بعد از لاگین کردن استفاده شود
+
+Response :
+
+```
+{
+success:	true,
+user:	
+  id : ...
+  name : "..."
+  username : ""
+  hash : "..."
+  avatar : "https://virgool.io/images/default-avatar.jpg"
+  bio	"..."
+  followers_count	...
+  following_count	...
+  activated	[true-false]
+  blocked	[true-false]
+}
+```
