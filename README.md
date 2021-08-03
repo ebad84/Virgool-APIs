@@ -143,3 +143,30 @@ recaptcha	false
 
 
 # Login
+
+- method:  POST
+  
+- params: [password,username]
+  
+```https://virgool.io/api/v1.4/auth/login```
+  
+```
+{
+"username":"...",
+"password":"...
+}
+```
+  
+  
+**LOGIN :** *_FALSE[❌] _*
+  
+**_Desc：برای ورود به حساب کاربری استفاده میشود_**
+  
+Note : تنها جهت لاگین به همراه ایمیل/نام‌کاربری و رمز عبور استفاده شود
+
+Response :
+
+```
+Your Private Info like token.
+*plz save your cookies*
+```
